@@ -1,0 +1,40 @@
+<!--Prosta aplikacja, zarzadzanie lista rzeczy do zrobienia-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista rzeczy do zrobienia</title>
+    <style>
+        .done {
+            margin: 4px auto;
+            color: white;
+            background-color: red;
+            border-radius: 20%;
+            border: 2px solid black;
+        } 
+
+        .done:hover {
+            background-color: palevioletred;
+        } 
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <input type="text" name="taskName">
+        <button>Dodaj zadanie</button>
+    </form>
+    <input class="searcher" type="text" placeholder="wyszukaj">
+    <h1>Liczba zadan: <span>0</span></h1>
+    <ul>
+        <li data-key="1">JavaScript <button class="done">usuń</button></li>
+        <li data-key="2">Databases <button class="done">usuń</button></li>
+        <li data-key="3">Node.js <button class="done">usuń</button></li>
+        <li data-key="4">Java <button class="done">usuń</button></li>
+        <li data-key="5">Spring <button class="done">usuń</button></li>
+        <li data-key="6">Angular <button class="done">usuń</button></li>
+    </ul>
+    <script src="main.js"></script>
+</body>
+</html>
